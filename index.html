@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>Game - 8 puzzle</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="js/control.js"></script>
+    <script src="js/game.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <div id="row">
+        <h1>Game - 8 Puzzle</h1>
+        <p style="font-size: 12px">Arrange the squares in the order from 1 to 8</p>
+        <p class="timer">
+            <span id="minutes">--</span>:<span id="seconds">--</span>
+        </p>
+        <p id="info">Start game !!!</p>
+
+        <div id="board">
+            <div id="r0c0" class="square">X</div>
+            <div id="r0c1" class="square">X</div>
+            <div id="r0c2" class="square">X</div>
+            <div id="r1c0" class="square">X</div>
+            <div id="r1c1" class="square empty">X</div>
+            <div id="r1c2" class="square">X</div>
+            <div id="r2c0" class="square">X</div>
+            <div id="r2c1" class="square">X</div>
+            <div id="r2c2" class="square">X</div>
+            <div style="clear:both"></div>
+        </div>
+
+        <button id="btnStart" class="btn pointerCursor" onclick="startGame()">Start game</button>
+        <button id="btnReset" class="btn display">Reset game</button>
+        <p style="margin-top: 30px; font-size: 12px">Coding by Krzysztof Zygmunt</p>
+    </div>
+</div>
+</body>
+</html>
